@@ -29,13 +29,13 @@ export default function Header() {
         </Link>
       </motion.div>
 
-      <motion.div className='flex items-center text-gray-400'
+      <motion.div className='flex items-center justify-center text-gray-400'
         initial={{ x: 500, opacity: 0, scale: 0.5 }} 
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
         <MdOutlineMail size={30} />
-        <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get In Touch</p>
+        <p className='uppercase hidden md:inline-flex text-sm text-gray-400 ml-3'>Get In Touch</p>
       </motion.div>
     </header>
   )

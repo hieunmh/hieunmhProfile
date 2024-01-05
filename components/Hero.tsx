@@ -4,13 +4,16 @@ import React from 'react';
 
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircle from './BackgroundCircle';
+import Link from 'next/link';
+
+import { motion } from 'framer-motion';
 
 export default function Hero() {
 
   const [text, count] = useTypewriter({
     words: [
       'Hi!',
-      'I\'m Nguyen Minh Hieu', 
+      'I\'m Nguyen Minh Hieu.', 
       'A Student from UET-VNU', 
     ],
     loop: true,
@@ -20,10 +23,34 @@ export default function Hero() {
   return (
     <div className='h-screen w-full flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircle />
-      <h1>
-        <span>{text}</span>
-        <Cursor cursorColor='#f7ab0a' />
-      </h1>
+
+      <motion.img src={'/japit.jpg'} alt='avatar image'
+        className='rounded-full h-32 w-32 object-cover -rotate-90' 
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }} 
+        transition={{ duration: 2.5 }}
+      />
+      <div>
+        <h2 className='text-base uppercase text-gray-400 pb-2 tracking-[15px]'>Software Engineer</h2>
+
+        <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10'>
+          <span className='mr-3'>{text}</span><Cursor cursorColor='#f7ab0a' />
+        </h1>
+
+        <div className='pt-5'>
+          <Link href={'#about'}>
+            <button className='heroButton'>About</button>
+          </Link>
+          <Link href={'#experience'}>
+            <button className='heroButton'>Experience</button>
+          </Link>
+          <Link href={'#skills'}>
+            <button className='heroButton'>Skills</button>
+          </Link>
+          <Link href={'#projects'}>
+            <button className='heroButton'>Projects</button>
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }
