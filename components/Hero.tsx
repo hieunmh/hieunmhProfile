@@ -12,16 +12,19 @@ export default function Hero() {
 
   const [text, count] = useTypewriter({
     words: [
-      'Hi!',
-      'I\'m Nguyen Minh Hieu.', 
-      'A Student from UET-VNU', 
+      'Hi !',
+      'I\'m Nguyen Minh Hieu.',
+      'A student from UET - VNU.', 
+      'こんにちは !',
+      'グエン・ミン・ヒエウと申します。', 
+      'UET - VNUの学生です。',
     ],
     loop: true,
     delaySpeed: 2000,
   })
 
   return (
-    <div className='h-screen w-full flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='h-screen w-full space-y-10 flex flex-col items-center justify-center text-center overflow-hidden'>
       <BackgroundCircle />
 
       <motion.img src={'/japit.jpg'} alt='avatar image'
@@ -29,7 +32,7 @@ export default function Hero() {
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} 
         transition={{ duration: 2.5 }}
       />
-      <div>
+      <div className='z-20'>
         <h2 className='text-base uppercase text-gray-400 pb-2 tracking-[15px]'>Software Engineer</h2>
 
         <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10'>

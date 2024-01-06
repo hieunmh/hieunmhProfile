@@ -16,7 +16,7 @@ export default function Header() {
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
-        <Link href={''} className='hover:text-gray-500'>
+        <Link href={'https://www.facebook.com/tk.hieunm'} className='hover:text-gray-500'>
           <FaFacebook size={30} />
         </Link>
 
