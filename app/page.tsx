@@ -1,4 +1,5 @@
 import About from '@/components/About';
+import Education from '@/components/Education/Education';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero/Hero';
 
@@ -13,6 +14,10 @@ export default function Home() {
 
       <section id='about' className='snap-center'>
         <About />
+      </section>
+      
+      <section id='education' className='snap-center'>
+        <Education />
       </section>
 
     </div>

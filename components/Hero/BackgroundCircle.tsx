@@ -15,7 +15,7 @@ export default function BackgroundCircle() {
         type: 'keyframes',
         duration: 5,
         repeat: Infinity,
-        repeatType: "reverse",
+        repeatType: 'reverse',
         repeatDelay: 2,
       }}
     >
