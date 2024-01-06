@@ -8,9 +8,16 @@ export default function BackgroundCircle() {
       animate={{ 
         opacity: [0.1, 0.2, 0.4, 0.8, 0.1, 1.0], 
         scale: [1, 2, 2, 3, 1], 
-        borderRadius: ['20%', '20%', '50%', '80%', '20%'] 
+        borderRadius: ['20%', '20%', '50%', '80%', '20%'] ,
+        rotate: 360
       }}
-      transition={{ duration: 2.5 }}
+      transition={{
+        type: 'keyframes',
+        duration: 5,
+        repeat: Infinity,
+        repeatType: "reverse",
+        repeatDelay: 2,
+      }}
     >
       <div className='border border-[#333333] rounded-full h-[200px] w-[200px] absolute mt-52 animate-ping'/>
       <div className='border border-[#333333] rounded-full h-[300px] w-[300px] absolute mt-52'/>
