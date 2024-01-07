@@ -21,7 +21,7 @@ export default function Home() {
     { name: 'typescript', imageURL: '/skills/ts.png', proficiency: '50' },
   ]
   return (
-    <div className='bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0'>
+    <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0'>
 
       <section id='hero' className='snap-start'>
         <Header />
