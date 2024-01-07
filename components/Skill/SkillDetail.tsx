@@ -17,7 +17,8 @@ export default function SkillDetail({ skill, index } : { skill: SkillDetailType,
   const { setSkillName } = useSKill();
     
   return (
-    <motion.li className='rounded-lg antialiased self-center flex items-center w-24 h-24'
+    <motion.li className='rounded-lg relative antialiased self-center flex items-center 
+      w-24 h-24 md:w-28 md:h-28 lg:w-36 lg:h-36 group cursor-pointer'
       onMouseEnter={() => setSkillName(skill.name)}
       onMouseLeave={() => setSkillName('')}
       initial={{ x: index % 2 == 0 ? 100 : -100 }}
@@ -25,10 +26,10 @@ export default function SkillDetail({ skill, index } : { skill: SkillDetailType,
       transition={{ duration: 1 }}
     >
       <img src={skill.imageURL} alt="skillImage"
-        className='object-cover rounded-lg bg-transparent scale-90'
+        className='object-cover rounded-lg scale-[0.85]'
       />
-      <div className="info absolute rounded-lg antialiased flex justify-center items-center bg-neutral-500 
-        bg-opacity-80 text-5xl text-[#f7ab0a] font-extrabold"
+      <div className='absolute rounded-lg antialiased flex justify-center items-center bg-[#363636] 
+        bg-opacity-90 text-6xl text-[#f7ab0a] font-extrabold w-full h-full invisible group-hover:visible'
       >
         <h3>{skill.proficiency}</h3>
       </div>
