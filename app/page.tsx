@@ -1,4 +1,5 @@
 import About from '@/components/About/About';
+import Contact from '@/components/Contact/Contact';
 import Education from '@/components/Education/Education';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero/Hero';
@@ -22,7 +23,7 @@ export default function Home() {
     { name: 'typescript', imageURL: '/skills/ts.png', proficiency: '50' },
   ]
   return (
-    <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0'>
+    <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0 scroll-smooth'>
       <Header />
 
       <section id='hero' className='snap-start'>
@@ -45,6 +46,9 @@ export default function Home() {
         <Projects />
       </section>
 
+      <section id='contact' className='snap-center'>
+        <Contact />
+      </section>
     </div>
   )
 }
