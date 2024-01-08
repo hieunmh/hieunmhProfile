@@ -1,6 +1,25 @@
+'use client';
+
 import React from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
+
+type Inputs = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
 
 export default function Contact() {
+
+  const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+    window.location.href = `mailto:hieunm.pt@gmail.com?subject=${formData.subject}
+    &body=Hi, my name is ${formData.name}. ${formData.message} ${formData.email}`
+  }
+  
+
   return (
     <div className='h-screen flex relative flex-col text-center md:text-left 
       md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
@@ -12,14 +31,14 @@ export default function Contact() {
           reach out to <span className='decoration-[#5c9ead] underline text-[#5c9ead] cursor-pointer'>me</span> if you want.
         </h4>
 
-        <form className='flex flex-col space-y-2 w-fit mx-auto'>
+        <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
           <div className='flex space-x-2 w-fit'>
-            <input type="text" placeholder='name' className='contactInput font-semibold' />
-            <input type="email" placeholder='email' className='contactInput font-semibold' />
+            <input {...register('name')} type="text" placeholder='name' className='contactInput font-semibold' />
+            <input {...register('email')} type="email" placeholder='email' className='contactInput font-semibold' />
           </div>
-          <input type="text" placeholder='subject' className='contactInput font-semibold' />
+          <input {...register('subject')} type="text" placeholder='subject' className='contactInput font-semibold' />
 
-          <textarea placeholder='message'
+          <textarea placeholder='message' {...register('message')}
             className='contactInput font-semibold resize-none focus:resize-y overflow-hidden'>
 
           </textarea>

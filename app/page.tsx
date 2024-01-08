@@ -8,22 +8,11 @@ import Skills from '@/components/Skill/Skills';
 
 export default function Home() {
 
-  const allSkill = [
-    { name: 'javascript', imageURL: '/skills/js.png', proficiency: '50' },
-    { name: 'typescript', imageURL: '/skills/ts.png', proficiency: '50' },
-    { name: 'php', imageURL: '/skills/js.png', proficiency: '50' },
-    { name: 'vue', imageURL: '/skills/ts.png', proficiency: '50' },
-    { name: 'next.js', imageURL: '/skills/js.png', proficiency: '50' },
-    { name: 'tailwindcss', imageURL: '/skills/ts.png', proficiency: '50' },
-    { name: 'framer motion', imageURL: '/skills/js.png', proficiency: '50' },
-    { name: 'typescript', imageURL: '/skills/ts.png', proficiency: '50' },
-    { name: 'javascript', imageURL: '/skills/js.png', proficiency: '50' },
-    { name: 'typescript', imageURL: '/skills/ts.png', proficiency: '50' },
-    { name: 'javascript', imageURL: '/skills/js.png', proficiency: '50' },
-    { name: 'typescript', imageURL: '/skills/ts.png', proficiency: '50' },
-  ]
   return (
-    <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0 scroll-smooth'>
+    <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll 
+      overflow-x-hidden z-0 scroll-smooth scrollbar-track-[#242424] scrollbar-thumb-[#5c9ead]
+       scrollbar-thin'
+    >
       <Header />
 
       <section id='hero' className='snap-start'>
