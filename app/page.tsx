@@ -1,7 +1,8 @@
-import About from '@/components/About';
+import About from '@/components/About/About';
 import Education from '@/components/Education/Education';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero/Hero';
+import Projects from '@/components/Project/Projects';
 import Skills from '@/components/Skill/Skills';
 
 export default function Home() {
@@ -22,9 +23,9 @@ export default function Home() {
   ]
   return (
     <div className='bg-[#242424] text-white h-screen snap-y snap-mandatory overflow-y-scroll z-0'>
+      <Header />
 
       <section id='hero' className='snap-start'>
-        <Header />
         <Hero />
       </section>
 
@@ -38,6 +39,10 @@ export default function Home() {
 
       <section id='skills' className='snap-center'>
         <Skills />
+      </section>
+
+      <section id='projects' className='snap-center'>
+        <Projects />
       </section>
 
     </div>

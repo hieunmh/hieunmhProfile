@@ -26,7 +26,7 @@ export default function About() {
         <h4 className='text-3xl font-semibold'>
           Here a little background with {' '}
           <Link href='https://www.facebook.com/uet.clbtiengnhat' 
-          target='_blank' className='underline decoration-[#f7ab0a]'>
+          target='_blank' className='underline decoration-[#5c9ead] text-[#5c9ead]'>
             JAPIT
           </Link> &#60;3
         </h4>

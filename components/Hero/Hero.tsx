@@ -38,13 +38,13 @@ export default function Hero() {
         <h2 className='text-base uppercase text-gray-400 pb-2 tracking-[15px]'>Software Engineer</h2>
 
         <h1 className='text-5xl lg:text-6xl font-semibold scroll-px-10'>
-          <span className='mr-3 hover:text-[#F7AB0A]/70 transition duration-300 cursor-default '>
+          <span className='mr-3 hover:text-[#5c9ead] transition duration-300 cursor-pointer'>
             {text}
           </span>
-          <Cursor cursorColor='#f7ab0a' />
+          <Cursor cursorColor='#5c9ead' />
         </h1>
 
-        <div className='pt-5'>
+        <div className='pt-5 font-semibold'>
           <Link href={'#about'}>
             <button className='heroButton'>About</button>
           </Link>

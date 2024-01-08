@@ -28,8 +28,8 @@ export default function SkillDetail({ skill, index } : { skill: SkillDetailType,
       <img src={skill.imageURL} alt="skillImage"
         className='object-cover rounded-lg scale-[0.85]'
       />
-      <div className='absolute rounded-lg antialiased flex justify-center items-center bg-[#363636] 
-        bg-opacity-90 text-6xl text-[#f7ab0a] font-extrabold w-full h-full invisible group-hover:visible'
+      <div className='absolute rounded-lg antialiased flex justify-center items-center bg-[#363636] bg-opacity-90 
+        text-6xl text-[#5c9ead] font-extrabold w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500'
       >
         <h3>{skill.proficiency}</h3>
       </div>
