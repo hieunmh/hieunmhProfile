@@ -43,7 +43,7 @@ export default function Projects() {
 
       <div className='w-full absolute top-[30%] bg-[#363636]/10 left-0 h-[500px] -skew-y-12' />
 
-      <div className='w-full flex items-center justify-center text-lg'>
+      <div className='w-full items-center justify-center md:flex hidden text-lg'>
           <div className='flex uppercase tracking-[5px] text-gray-500 font-semibold'>
             <p>more interesting project in my</p>
             <Link href={'https://github.com/hieunmh'} className='hover:text-[#5c9ead] flex items-center ml-[10px]'>

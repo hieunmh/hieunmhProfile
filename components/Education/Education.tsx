@@ -30,7 +30,8 @@ export default function Education() {
     >
       <h3 className=' absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>Education</h3>
 
-      <div className='w-full flex space-x-0 overflow-x-scroll scrollbar-thin snap-x snap-mandatory'>
+      <div className='w-full lg:space-x-10 space-y-10 lg:space-y-0 scrollbar-thin 
+        snap-x snap-mandatory grid grid-cols-1 lg:grid-cols-2'>
         {educations.map((education, key) => (
           <EducationCard key={key} education={education} />
         ))}
