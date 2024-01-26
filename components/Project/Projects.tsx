@@ -8,19 +8,23 @@ export default function Projects() {
 
   const projects = [
     {
-      title: 'Project 1',
-      description: 'This AI tool app built on Streamlit library provides a powerful and user-friendly tool through web interface for accessing key information from healthcare-related academic literature. Its natural language processing capabilities and intuitive user interface make it an essential AI tool for anyone working in the healthcare industry.',
-      link: ''
+      title: 'Magic Post',
+      description: `Shipping System Management Software`,
+      link: 'https://github.com/hieunmh/mgpost'
     },
     {
-      title: 'Project 2',
-      description: 'This is project 2',
-      link: ''
+      title: 'Gbox',
+      description: `Gbox - Online Player Connection Platform is a great bridge between game 
+        lovers around the world. Gbox not only provides a place to share achievements, skills, 
+        and advice, but also a true community where people can meet and form new relationships.`,
+      link: 'https://github.com/Minhnhat0408/Gbox'
     },
     {
-      title: 'Project 3',
-      description: 'This is project 3',
-      link: ''
+      title: 'Feastly',
+      description: `This is a food sales website.
+      You can buy various types of food and drinks such as pho and coffee.
+      Easy-to-read, clearly demarcated interface`,
+      link: 'https://github.com/hieunmh/SE'
     },
     {
       title: 'Project 4',

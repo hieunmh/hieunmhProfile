@@ -11,7 +11,7 @@ export default function ProjectDetail({ project } : { project:ProjectDetail }) {
   return (
     <div className='w-full border border-[#363636] h-[130px] md:h-[250px] rounded-lg flex flex-col p-5'>
       <div className='text-start flex items-center'>
-        <Link href={''} className='font-bold text-2xl underline text-[#5c9ead]'>
+        <Link href={project.link} target='_blank' className='font-bold text-2xl underline text-[#5c9ead]'>
           {project.title}
         </Link>
         <div className='py-0.5 px-3 font-semibold border ml-4 border-[#363636] rounded-full'>
