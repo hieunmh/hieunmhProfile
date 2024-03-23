@@ -16,17 +16,17 @@ export default function Header() {
         animate={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
       >
-        <Link href={'https://www.facebook.com/tk.hieunm'} className='hover:text-[#5c9ead]'>
+        <a target='_blank' href={'https://www.facebook.com/f.hieunm'} className='hover:text-[#5c9ead]'>
           <FaFacebook size={30} />
-        </Link>
+        </a>
 
-        <Link href={'https://github.com/hieunmh'} className='hover:text-[#5c9ead]'>
+        <a target='_blank' href={'https://github.com/hieunmh'} className='hover:text-[#5c9ead]'>
           <FaGithub size={30} />
-        </Link>
+        </a>
 
-        <Link href={'https://www.instagram.com/heheinclass/'} className='hover:text-[#5c9ead]'>
+        <a target='_blank' href={'https://www.instagram.com/heheinclass/'} className='hover:text-[#5c9ead]'>
           <FaInstagram size={30} />
-        </Link>
+        </a>
       </motion.div>
 
       <motion.div className='flex items-center justify-center text-gray-400 hover:text-[#5c9ead] cursor-pointer'

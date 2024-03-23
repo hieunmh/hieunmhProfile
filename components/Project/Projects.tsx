@@ -27,9 +27,10 @@ export default function Projects() {
       link: 'https://github.com/hieunmh/SE'
     },
     {
-      title: 'Project 4',
-      description: 'This is project 4',
-      link: ''
+      title: 'Dischat',
+      description: `This s a chat web application like discord. 
+      You can create a message, chat, voice call or video call.`,
+      link: 'https://github.com/hieunmh/dischat'
     },
   ]
   
