@@ -17,7 +17,7 @@ export default function Projects() {
       description: `Gbox - Online Player Connection Platform is a great bridge between game 
         lovers around the world. Gbox not only provides a place to share achievements, skills, 
         and advice, but also a true community where people can meet and form new relationships.`,
-      link: 'https://github.com/Minhnhat0408/Gbox'
+      link: 'https://github.com/hieunmh/Gbox'
     },
     {
       title: 'Feastly',
@@ -27,7 +27,7 @@ export default function Projects() {
       link: 'https://github.com/hieunmh/SE'
     },
     {
-      title: 'Dischat',
+      title: 'GroundHub',
       description: `This s a chat web application like discord. 
       You can create a message, chat, voice call or video call.`,
       link: 'https://github.com/hieunmh/dischat'
