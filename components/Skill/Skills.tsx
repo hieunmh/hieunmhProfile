@@ -13,8 +13,8 @@ export default function Skills() {
   const allSkill = [
     { name: 'javascript', imageURL: '/skills/js.png', proficiency: '75' },
     { name: 'typescript', imageURL: '/skills/ts.png', proficiency: '65' },
-    { name: 'C++', imageURL: '/skills/cpp.png', proficiency: '35' },
-    { name: 'python', imageURL: '/skills/python.svg', proficiency: '35' },
+    { name: 'C++', imageURL: '/skills/cpp.png', proficiency: '30' },
+    { name: 'python', imageURL: '/skills/python.svg', proficiency: '40' },
     { name: 'php', imageURL: '/skills/php.svg', proficiency: '50' },
     { name: 'java', imageURL: '/skills/java.png', proficiency: '60' },
     { name: 'tailwindcss', imageURL: '/skills/tw.png', proficiency: '60' },

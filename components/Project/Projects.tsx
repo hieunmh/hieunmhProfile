@@ -52,7 +52,7 @@ export default function Projects() {
           <div className='flex uppercase tracking-[5px] text-gray-500 font-semibold'>
             <p>more interesting project in my</p>
             <Link href={'https://github.com/hieunmh'} className='hover:text-[#5c9ead] flex items-center ml-[10px]'>
-              <p>github</p>
+              <p className='underline'>github</p>
               <FaGithub className='ml-1 mb-1' />
             </Link>
           </div>
