@@ -33,7 +33,8 @@ export default function Hero() {
         transition={{ type: 'keyframes', duration: 2, delay: 2 }} viewport={{ once: true }}
       >
         <Image src={'/japit.jpg'} width={1000} height={1000} priority={true} alt="Hieu 's img"
-          className='rounded-full h-36 w-36 mx-auto object-cover z-20 border-4 mb-4 -rotate-90'
+          className='rounded-full h-36 w-36 mx-auto object-cover z-20 border-4 
+          mb-4 -rotate-90 transition duration-500 grayscale hover:grayscale-0'
         />
         <h2 className='text-base uppercase text-gray-400 pb-2 tracking-[15px]'>Software Engineer</h2>
 

@@ -26,10 +26,10 @@ export default function SkillDetail({ skill, index } : { skill: SkillDetailType,
       transition={{ duration: 1 }}
     >
       <img src={skill.imageURL} alt="skillImage"
-        className='object-cover rounded-lg scale-[0.85]'
+        className='object-cover rounded-lg scale-[0.85] transition-all duration-500 grayscale group-hover:grayscale-0'
       />
-      <div className='absolute rounded-lg antialiased flex justify-center items-center bg-[#363636] bg-opacity-90 
-        text-6xl text-[#5c9ead] font-extrabold w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500'
+      <div className='absolute rounded-lg antialiased flex justify-center items-center bg-[#363636] bg-opacity-60 
+        text-6xl text-white font-extrabold w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-500'
       >
         <h3>{skill.proficiency}</h3>
       </div>

@@ -17,9 +17,9 @@ export default function About() {
 
       <motion.img src='/japito.jpg' 
         initial={{ x: -500, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true }} transition={{ duration: 3 }}
+        viewport={{ once: true }} transition={{ duration: 1.5 }}
         className='flex-shrink-0 w-80 sm:w-[500px] object-cover 
-          rounded-lg md:w-[700px] xl:w-[900px]'
+          rounded-lg md:w-[700px] xl:w-[900px] transition duration-500 grayscale hover:grayscale-0'
       />
 
       <div className='w-full space-y-10'>
