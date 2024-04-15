@@ -4,7 +4,6 @@ import useSKill from '@/hooks/useSkill';
 import React, { useEffect } from 'react';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 type SkillDetailType = {
   name: string;

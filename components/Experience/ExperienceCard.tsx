@@ -17,16 +17,16 @@ export default function ExperienceCard({ education } : { education: ExperienceCa
         <motion.img src={education.image} initial={{ y: -100, opacity: 0 }}
           transition={{ duration: 1.2 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className='w-28 h-28 lg:w-[200px] lg:h-[200px] object-cover rounded-full object-center transition duration-500 grayscale hover:grayscale-0' 
+          className='w-28 h-28 lg:w-[200px] lg:h-[200px] object-cover rounded-full object-center grayscale hover:grayscale-0' 
         />
 
         <div className='px-2 md:px-0 space-y-2'>
       
-          <p className='font-extrabold text-base text-[#5c9ead] tracking-[1px] uppercase'>{education.school}</p>
+          <p className='font-extrabold text-base text-[#5c9ead] tracking-[1px]'>{education.school}</p>
 
-          <h4 className='text-xl uppercase font-black tracking-[2px] text-[#5c9ead]'>{education.role}</h4>
+          <h4 className='text-xl font-semibold tracking-[1px] text-[#5c9ead]'>{education.role}</h4>
 
-          <p className='font-semibold text-sm text-gray-400 tracking-[2px] text-[5c9ead]'>{education.time}</p>
+          <p className='font-semibold text-sm text-gray-400 tracking-[0.5px] text-[5c9ead]'>{education.time}</p>
         </div>
       </div>
     </article>
