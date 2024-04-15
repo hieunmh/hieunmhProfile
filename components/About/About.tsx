@@ -15,9 +15,9 @@ export default function About() {
         About
       </h3>
 
-      <motion.img src='/japito.jpg' 
-        initial={{ x: -500, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true }} transition={{ duration: 1.5 }}
+      <img src='/japito.jpg' alt='japit'
+        // initial={{ x: -500, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}
+        // viewport={{ once: true }} transition={{ duration: 1.5 }}
         className='flex-shrink-0 w-80 sm:w-[500px] object-cover 
           rounded-lg md:w-[700px] xl:w-[900px] transition duration-500 grayscale hover:grayscale-0'
       />
