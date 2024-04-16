@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -15,11 +16,16 @@ export default function About() {
         About
       </h3>
 
-      <motion.img src='/japitmember.jpg' alt='japit member'
+      {/* <motion.img src='/japitmember.jpg' alt='japit member'
         initial={{ x: -500, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }} transition={{ duration: 0.5 }}
         className='flex-shrink-0 w-80 sm:w-[500px] object-cover 
-          rounded-lg md:w-[700px] xl:w-[900px] transiton duration-500 grayscale-[1] hover:grayscale-0'
+        rounded-lg md:w-[700px] xl:w-[900px] transiton duration-500 grayscale-[1] hover:grayscale-0'
+      /> */}
+      
+      <Image src='/japitmember.jpg' alt='japit member' width={1000} height={1000} 
+        className='flex-shrink-0 w-80 sm:w-[500px] object-cover 
+        rounded-lg md:w-[700px] xl:w-[900px] transiton duration-500 grayscale-[1] hover:grayscale-0'
       />
 
       <div className='w-full space-y-10'>
